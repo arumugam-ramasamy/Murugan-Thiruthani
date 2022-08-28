@@ -63,7 +63,7 @@ public class BankAccountDAO extends JdbcDaoSupport {
         }
         accountInfo.setBalance(newBalance);
         // Update to DB
-        String sqlUpdate = "Update Bank_Account set Balance = ? where Id = ?";
+        String sqlUpdate = "Update BANK_ACCOUNT set Balance = ? where Id = ?";
         this.getJdbcTemplate().update(sqlUpdate, accountInfo.getBalance(), accountInfo.getId());
     }
 

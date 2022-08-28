@@ -9,7 +9,7 @@ import org.springframework.jdbc.core.RowMapper;
 public class BankAccountMapper implements RowMapper<BankAccountInfo> {
 
     public static final String BASE_SQL //
-            = "Select ba.Id, ba.Full_Name, ba.Balance From Bank_Account ba ";
+            = "Select ba.Id, ba.Full_Name, ba.Balance From BANK_ACCOUNT ba ";
 
     @Override
     public BankAccountInfo mapRow(ResultSet rs, int rowNum) throws SQLException {
